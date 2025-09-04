@@ -1,6 +1,22 @@
+import TwiineLogo from '../assets/twiine-logo.png';
+import Hero1 from '../assets/hero1.png';
+import Hero2 from '../assets/hero2.png';
+import Hero3 from '../assets/hero3.png';
+import FeaturesImage from '../assets/features.png';
+import Interaction1 from '../assets/interaction1.png';
+import Interaction2 from '../assets/interaction2.png';
+import Interaction3 from '../assets/interaction3.png';
+import HowItWorks1 from '../assets/howitworks1.png';
+import HowItWorks2 from '../assets/howitworks2.png';
+import HowItWorks3 from '../assets/howitworks3.png';
+import ShadmanImage from '../assets/shadman.png';
+import JaskaranImage from '../assets/jaskaran.png';
+import NeharikaImage from '../assets/neharika.png';
+import WaitlistImage from '../assets/waitlist.gif';
+
 export const NAVBAR = {
   logo: {
-    src: '#',
+    src: TwiineLogo,
     alt: 'Twiine Logo',
   },
   items: [
@@ -18,9 +34,9 @@ export const HERO = {
   description:
     'Build authentic professional connections, grow in your career and share your experiences.',
   images: [
-    { src: '/images/hero1.png', alt: 'Hero Image 1' },
-    { src: '/images/hero2.png', alt: 'Hero Image 2' },
-    { src: '/images/hero3.png', alt: 'Hero Image 3' },
+    { src: Hero1, alt: 'Hero Image 1' },
+    { src: Hero2, alt: 'Hero Image 2' },
+    { src: Hero3, alt: 'Hero Image 3' },
   ],
 };
 
@@ -35,7 +51,7 @@ export const FEATURES = {
     'Choose the information you want to display on your profile',
     'Support, tips, and conversation starters for better interactions',
   ],
-  image: { src: '/images/features.png', alt: 'Features Image' },
+  image: { src: FeaturesImage, alt: 'Features Image' },
 };
 
 export const INTERACTIONS = {
@@ -58,9 +74,9 @@ export const INTERACTIONS = {
     },
   ],
   images: [
-    { src: '/images/interaction1.png', alt: 'Interaction Image 1' },
-    { src: '/images/interaction2.png', alt: 'Interaction Image 2' },
-    { src: '/images/interaction3.png', alt: 'Interaction Image 3' },
+    { src: Interaction1, alt: 'Interaction Image 1' },
+    { src: Interaction2, alt: 'Interaction Image 2' },
+    { src: Interaction3, alt: 'Interaction Image 3' },
   ],
 };
 
@@ -70,15 +86,15 @@ export const HOW_IT_WORKS = {
   steps: [
     {
       title: 'Sign up and personalize your profile details.',
-      image: { src: '/images/howitworks1.png', alt: 'How It Works Image 1' },
+      image: { src: HowItWorks1, alt: 'How It Works Image 1' },
     },
     {
       title: 'Connect with others within your chosen network.',
-      image: { src: '/images/howitworks2.png', alt: 'How It Works Image 2' },
+      image: { src: HowItWorks2, alt: 'How It Works Image 2' },
     },
     {
       title: 'Start chatting, create lasting professional connections.',
-      image: { src: '/images/howitworks3.png', alt: 'How It Works Image 3' },
+      image: { src: HowItWorks3, alt: 'How It Works Image 3' },
     },
   ],
 };
@@ -135,7 +151,7 @@ export const TEAM = {
         github: 'https://github.com/shadmanh123',
         portfolio: 'https://shadmanhossain.vercel.app/',
       },
-      image: { src: '/images/shadman.png', alt: 'Shadman Hossain' },
+      image: { src: ShadmanImage, alt: 'Shadman Hossain' },
     },
     {
       name: 'Jaskaran Singh',
@@ -146,7 +162,7 @@ export const TEAM = {
         github: 'https://github.com/TheCoderSingh',
         portfolio: 'https://thecodersingh.com/',
       },
-      image: { src: '/images/jaskaran.png', alt: 'Jaskaran Singh' },
+      image: { src: JaskaranImage, alt: 'Jaskaran Singh' },
     },
     {
       name: 'Neharika Sidda',
@@ -156,7 +172,7 @@ export const TEAM = {
         linkedin: 'https://www.linkedin.com/in/neharikasidda/',
         portfolio: 'https://www.neharikasidda.com/',
       },
-      image: { src: '/images/neharika.png', alt: 'Neharika Sidda' },
+      image: { src: NeharikaImage, alt: 'Neharika Sidda' },
     },
   ],
 };
@@ -165,7 +181,7 @@ export const WAITLIST = {
   title: "Join Twiine's Waitlist",
   description: 'Join the waitlist to participate in our beta testing stages!',
   cta: 'Join Waitlist',
-  image: { src: '/images/waitlist.png', alt: 'Waitlist Image' },
+  image: { src: WaitlistImage, alt: 'Waitlist Image' },
 };
 
 export const FOOTER = {
