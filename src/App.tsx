@@ -1,10 +1,31 @@
 import './App.css';
+import FAQ from './components/FAQ';
+import Features from './components/Features';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import HowItWorks from './components/HowItWorks';
+import Navbar from './components/Navbar';
+import Team from './components/Team';
+import Waitlist from './components/Waitlist';
 
 function App() {
   return (
-    <div className="h-screen w-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">Twiine 🚀</h1>
-    </div>
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <FAQ />
+        <Team />
+        <Waitlist />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
 
