@@ -1,7 +1,7 @@
 import TwiineLogo from '../assets/twiine-logo.png';
-import Hero1 from '../assets/hero1.png';
-import Hero2 from '../assets/hero2.png';
-import Hero3 from '../assets/hero3.png';
+import HeroImage1 from '../assets/hero-bg.png';
+import HeroImage2 from '../assets/hero-bg2.png';
+import HeroImage3 from '../assets/hero-bg3.png';
 import FeaturesImage from '../assets/features.png';
 import Interaction1 from '../assets/interaction1.png';
 import Interaction2 from '../assets/interaction2.png';
@@ -33,9 +33,9 @@ export const HERO = {
   description:
     'Build authentic professional connections, grow in your career and share your experiences.',
   images: [
-    { src: Hero1, alt: 'Hero Image 1' },
-    { src: Hero2, alt: 'Hero Image 2' },
-    { src: Hero3, alt: 'Hero Image 3' },
+    { src: HeroImage1, alt: 'Hero Image 1' },
+    { src: HeroImage2, alt: 'Hero Image 2' },
+    { src: HeroImage3, alt: 'Hero Image 3' },
   ],
 };
 
