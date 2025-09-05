@@ -44,11 +44,14 @@ export const FEATURES = {
   description:
     'Designed to complement traditional networking applications by helping you make that first connection.',
   items: [
-    'Smart matching algorithm for tailored connections',
-    'Customizable profiles for personal expression',
-    'Upon matching, swiping is disabled to promote genuinity',
-    'Choose the information you want to display on your profile',
-    'Support, tips, and conversation starters for better interactions',
+    { icon: 'DoubleCheck', text: 'Smart matching algorithm for tailored connections' },
+    { icon: 'EditPencil', text: 'Customizable profiles for personal expression' },
+    { icon: 'ChatBubble', text: 'Upon matching, swiping is disabled to promote genuinity' },
+    { icon: 'EyeClosed', text: 'Choose the information you want to display on your profile' },
+    {
+      icon: 'InfoCircle',
+      text: 'Support, tips, and conversation starters for better interactions',
+    },
   ],
   image: { src: FeaturesImage, alt: 'Features Image' },
 };
