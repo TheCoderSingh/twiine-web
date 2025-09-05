@@ -1,1 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 @import 'tailwindcss';
+
+@theme {
+  --font-primary: 'Rethink Sans', 'Rethink Sans Placeholder', sans-serif;
+  --color-primary: #1a6d66;
+  --color-secondary: #666666;
+  --color-tertiary: #262626;
+  --color-heading: #266b65;
+  --color-light: #266b6533;
+}
+
+body {
+  font-family: var(--font-primary);
+}

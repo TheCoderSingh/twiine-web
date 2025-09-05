@@ -19,8 +19,7 @@ export const NAVBAR = {
     src: TwiineLogo,
     alt: 'Twiine Logo',
   },
-  items: [
-    { label: 'Home', href: '#home' },
+  links: [
     { label: 'Features', href: '#features' },
     { label: 'How it works', href: '#how-it-works' },
     { label: 'FAQ', href: '#faq' },
@@ -192,5 +191,3 @@ export const FOOTER = {
     { label: 'Terms of Service', href: '#' },
   ],
 };
-
-export const COLORS = {};
