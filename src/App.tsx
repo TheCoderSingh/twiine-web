@@ -23,7 +23,6 @@ function App() {
         <header>
           <Navbar />
         </header>
-        <div className="bg-amber-100 h-[400px]"></div>
         <main>
           <Hero />
           <Features />
