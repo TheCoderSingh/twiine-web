@@ -8,6 +8,7 @@ import HowItWorks from './components/HowItWorks';
 import Navbar from './components/Navbar';
 import Team from './components/Team';
 import Waitlist from './components/Waitlist';
+import Interactions from './components/Interactions';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <main>
           <Hero />
           <Features />
+          <Interactions />
           <HowItWorks />
           <FAQ />
           <Team />
