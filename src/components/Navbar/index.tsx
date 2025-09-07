@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NAVBAR } from '../../constants';
 import { Menu } from 'iconoir-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,12 +28,12 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            <a
-              href={NAVBAR.cta.href}
+            <Link
+              to={NAVBAR.cta.href}
               className="bg-light text-primary font-[500] py-2 px-6 rounded-full text-center xl:text-2xl lg:text-md"
             >
               {NAVBAR.cta.label}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,14 +1,8 @@
 import { IconoirProvider } from 'iconoir-react';
 import './App.css';
-import FAQ from './components/FAQ';
-import Features from './components/Features';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import HowItWorks from './components/HowItWorks';
-import Navbar from './components/Navbar';
-import Team from './components/Team';
-import Waitlist from './components/Waitlist';
-import Interactions from './components/Interactions';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import WaitlistPage from './pages/Waitlist';
 
 function App() {
   return (
@@ -21,21 +15,10 @@ function App() {
           height: '2em',
         }}
       >
-        <header>
-          <Navbar />
-        </header>
-        <main>
-          <Hero />
-          <Features />
-          <Interactions />
-          <HowItWorks />
-          <FAQ />
-          <Team />
-          <Waitlist />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/waitlist" element={<WaitlistPage />} />
+        </Routes>
       </IconoirProvider>
     </>
   );

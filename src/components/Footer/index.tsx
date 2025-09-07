@@ -3,7 +3,7 @@ import { FOOTER } from '../../constants';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-white/0 to-[rgba(39,107,101,0.32)] text-center">
+    <div className="bg-gradient-to-b from-white/0 to-[rgba(39,107,101,0.32)] text-center">
       <div className="flex justify-center pt-20 py-5 gap-3">
         <a
           href={FOOTER.linkedin}
@@ -26,7 +26,7 @@ const Footer = () => {
         <Circle width={6} height={6} style={{ strokeWidth: '8px' }} />
         <a href="#terms-of-service">Terms of Service</a>
       </div>
-    </footer>
+    </div>
   );
 };
 
