@@ -104,7 +104,8 @@ export const HOW_IT_WORKS = {
 export const FAQS = {
   title: 'Frequently Asked Questions',
   description:
-    "If you can't find what you are looking for, please don't hesitate to contact us at twiineteam@gmail.com",
+    "If you can't find what you are looking for, please don't hesitate to contact us at ",
+  email: 'twiineteam@gmail.com',
   items: [
     {
       question: 'Is Twiine free to use?',
