@@ -4,7 +4,7 @@ import Interactions from '../../components/Interactions';
 import HowItWorks from '../../components/HowItWorks';
 import FAQ from '../../components/FAQ';
 import Team from '../../components/Team';
-import Waitlist from '../Waitlist';
+import Waitlist from '../../components/Waitlist';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
