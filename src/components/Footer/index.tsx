@@ -15,8 +15,6 @@ const Footer = () => {
         </a>
         <a
           href={'mailto:' + FOOTER.email}
-          target="_blank"
-          rel="noopener noreferrer"
           className="border border-primary rounded-full flex justify-center items-center px-3 py-1 gap-1 text-primary"
         >
           <Mail width={20} height={20} />
