@@ -1,5 +1,6 @@
 import { Circle, Linkedin, Mail } from 'iconoir-react';
 import { FOOTER } from '../../constants';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -22,9 +23,9 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex justify-center items-center gap-5 pb-5 text-primary">
-        <a href="#privacy-policy">Privacy Policy</a>
+        <Link to="/privacy-policy">Privacy Policy</Link>
         <Circle width={6} height={6} style={{ strokeWidth: '8px' }} />
-        <a href="#terms-of-service">Terms of Service</a>
+        <Link to="/terms-of-service">Terms of Service</Link>
       </div>
     </div>
   );

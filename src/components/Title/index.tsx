@@ -3,16 +3,20 @@ import * as Icons from 'iconoir-react';
 interface TitleProps {
   icon: keyof typeof Icons;
   text: string;
+  bg?: string;
+  textColor?: string;
 }
 
-const Title = ({ icon, text }: TitleProps) => {
+const Title = ({ icon, text, bg, textColor }: TitleProps) => {
   const Icon = Icons[icon] as React.ElementType;
 
   return (
-    <div className="inline-flex justify-center items-center gap-2 bg-light rounded-[100px] px-4 py-2 mx-auto">
+    <div
+      className={`inline-flex justify-center items-center gap-2 rounded-[100px] px-4 py-2 mx-auto bg-${bg || 'light'}`}
+    >
       <div>{<Icon fontSize={12} />}</div>
       <div>
-        <h2 className="text-heading text-lg font-[500]">{text}</h2>
+        <h2 className={`text-lg font-[500] ${textColor || 'text-heading'}`}>{text}</h2>
       </div>
     </div>
   );
