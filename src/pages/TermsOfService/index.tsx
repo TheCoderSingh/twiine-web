@@ -19,8 +19,8 @@ const TermsOfService = () => {
             <Title
               icon={TERMS_OF_SERVICE.lastUpdatedIcon as keyof typeof Icons}
               text={TERMS_OF_SERVICE.lastUpdated}
-              bg="gray-100"
-              textColor="secondary"
+              bg="bg-gray-100"
+              textColor="text-secondary"
             />
           </div>
           <div className="text-left">

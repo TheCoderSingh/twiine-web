@@ -68,8 +68,8 @@ const PrivacyPolicy = () => {
             <Title
               icon={PRIVACY_POLICY.lastUpdatedIcon as keyof typeof Icons}
               text={PRIVACY_POLICY.lastUpdated}
-              bg="gray-100"
-              textColor="secondary"
+              bg="bg-gray-100"
+              textColor="text-secondary"
             />
           </div>
           <div className="text-left">
