@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { WAITLIST } from '../../constants';
 
 const Waitlist = () => {
@@ -11,12 +12,12 @@ const Waitlist = () => {
           <p className="mt-4 text-secondary md:text-xl">{WAITLIST.description}</p>
 
           <div className="mt-8">
-            <a
-              href={WAITLIST.href}
+            <Link
+              to={WAITLIST.href}
               className="bg-light text-primary text-2xl font-[500] py-2 px-6 rounded-full text-center lg:text-md hover:bg-heading hover:text-white transition-colors duration-500"
             >
               {WAITLIST.cta}
-            </a>
+            </Link>
           </div>
         </div>
         <div className="hidden rounded-[100px] p-4 ml-10 md:w-[40%] bg-gradient-to-b from-white from-50% to-[rgba(38,107,101,0.7)] md:flex justify-center items-center h-[600px]">
