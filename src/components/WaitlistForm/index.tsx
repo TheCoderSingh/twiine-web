@@ -45,7 +45,7 @@ const WaitlistForm = () => {
   };
 
   return (
-    <div className="w-[80%] mx-auto mt-20 text-center bg-white/20 py-4 px-4 rounded-[25px] md:w-[40%] md:py-24 sm:w-[70%]">
+    <div className="w-[80%] mx-auto mt-20 text-center bg-white/20 py-4 px-4 rounded-[25px] sm:w-[70%] md:w-[40%] md:py-24">
       {status === 'success' && (
         <div>
           <p className="text-primary leading-5">{WAITLIST_FORM.success.tagline}</p>
