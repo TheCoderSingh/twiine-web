@@ -67,7 +67,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="hidden md:block">
-            <div className="flex items-center gap-10">
+            <div className="flex items-center gap-6">
               {NAVBAR.links.map((link) =>
                 location.pathname === '/' ? (
                   <ScrollLink
@@ -76,7 +76,7 @@ const Navbar = () => {
                     smooth={true}
                     offset={-140}
                     duration={500}
-                    className="text-tertiary text-xl cursor-pointer hover:text-primary transition-colors"
+                    className="text-tertiary text-xl cursor-pointer hover:bg-light/50 px-3 py-1 rounded-full transition duration-500 ease-in-out"
                   >
                     {link.label}
                   </ScrollLink>

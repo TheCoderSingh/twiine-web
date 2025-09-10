@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Minus, Plus } from 'iconoir-react';
+import { Plus } from 'iconoir-react';
 
 type FAQItemProps = {
   question: string;
@@ -17,15 +17,21 @@ const FAQItem = ({ question, answer }: FAQItemProps) => {
       >
         <h3 className="text-left text-xl text-heading md:text-2xl">{question}</h3>
         <span className="rounded-full bg-light text-heading flex justify-center items-center p-1">
-          {isOpen ? <Minus width={25} height={25} /> : <Plus width={25} height={25} />}
+          <Plus
+            width={25}
+            height={25}
+            className={`transition duration-300 ease-out ${isOpen ? 'rotate-45' : 'rotate-0'}`}
+          />
         </span>
       </button>
 
-      {isOpen && (
-        <p className="mt-2 text-tertiary text-left transition-all duration-300 md:w-[80%]">
-          {answer}
-        </p>
-      )}
+      <div
+        className={`grid transition-all duration-300 ease-out ${
+          isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+        }`}
+      >
+        <p className="mt-2 text-tertiary text-left md:w-[80%] overflow-hidden">{answer}</p>
+      </div>
     </div>
   );
 };

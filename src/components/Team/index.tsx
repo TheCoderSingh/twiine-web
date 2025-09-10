@@ -4,7 +4,7 @@ import Title from '../Title';
 
 const Team = () => {
   return (
-    <section className="text-center mt-36 mb-14 md:w-[80%] lg:w-[70%] mx-auto" id="team">
+    <section className="text-center mt-36 mb-14 md:w-[80%] lg:w-[70%] mx-auto " id="team">
       <Title icon="Group" text="Team" />
 
       <div className="mt-5 w-[90%] mx-auto">
