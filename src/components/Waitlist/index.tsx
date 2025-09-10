@@ -12,7 +12,7 @@ const Waitlist = () => {
 
           <div className="mt-8">
             <a
-              href={WAITLIST.cta}
+              href={WAITLIST.href}
               className="bg-light text-primary text-2xl font-[500] py-2 px-6 rounded-full text-center lg:text-md"
             >
               {WAITLIST.cta}

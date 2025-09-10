@@ -29,6 +29,7 @@ const Hero = () => {
         backgroundImage: `url(${bgImage})`,
         backgroundPosition: 'center',
       }}
+      id="hero"
     >
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-[500] text-tertiary md:text-6xl md:mt-32">{HERO.title}</h1>

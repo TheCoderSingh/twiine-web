@@ -4,7 +4,7 @@ import Title from '../Title';
 
 const HowItWorks = () => {
   return (
-    <section className="mt-36 mb-14 text-center">
+    <section className="mt-36 mb-14 text-center" id="how-it-works">
       <Title icon="Journal" text="How it Works" />
 
       <div className="mt-5 w-[90%] mx-auto">
