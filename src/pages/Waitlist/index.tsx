@@ -4,7 +4,7 @@ import WaitlistForm from '../../components/WaitlistForm';
 
 const WaitlistPage = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-gradient-to-b from-light to-[rgba(86,124,121,0.7)]">
+    <div className="min-h-screen flex flex-col justify-between bg-gradient-to-b from-light to-[rgba(86,124,121,0.7)] md:pt-20">
       <header>
         <Navbar />
       </header>

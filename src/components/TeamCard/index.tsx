@@ -1,11 +1,36 @@
 import { Emoji, Github, Linkedin } from 'iconoir-react';
 import { TEAM } from '../../constants';
+import { useEffect } from 'react';
 
 type Member = (typeof TEAM.members)[0];
 
 const TeamCard = ({ member }: { member: Member }) => {
+  useEffect(() => {
+    const elements = document.querySelectorAll('[data-transition-on-scroll]');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.setAttribute('data-visible', 'true');
+            observer.unobserve(entry.target); // Ensure it only happens once
+          }
+        });
+      },
+      { threshold: 0.1 }, // Trigger when 10% of the image is visible
+    );
+
+    elements.forEach((element) => observer.observe(element));
+
+    return () => {
+      elements.forEach((element) => observer.unobserve(element));
+    };
+  }, []);
+
   return (
-    <div className="relative w-[250px] md:w-[200px] lg:w-[30%] flex flex-col items-center group">
+    <div
+      className="relative w-[250px] md:w-[200px] lg:w-[30%] flex flex-col items-center group opacity-0 translate-y-20 transition duration-700 ease-linear data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      data-transition-on-scroll
+    >
       {/* Image */}
       <img
         src={member.image.src}
