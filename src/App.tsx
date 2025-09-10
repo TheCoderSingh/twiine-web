@@ -1,30 +1,29 @@
+import { IconoirProvider } from 'iconoir-react';
 import './App.css';
-import FAQ from './components/FAQ';
-import Features from './components/Features';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import HowItWorks from './components/HowItWorks';
-import Navbar from './components/Navbar';
-import Team from './components/Team';
-import Waitlist from './components/Waitlist';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import WaitlistPage from './pages/Waitlist';
+import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <Hero />
-        <Features />
-        <HowItWorks />
-        <FAQ />
-        <Team />
-        <Waitlist />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <IconoirProvider
+        iconProps={{
+          color: '#1a6d66',
+          strokeWidth: 2,
+          width: '2em',
+          height: '2em',
+        }}
+      >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/waitlist" element={<WaitlistPage />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
+      </IconoirProvider>
     </>
   );
 }
