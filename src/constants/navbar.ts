@@ -6,10 +6,10 @@ export const NAVBAR = {
     alt: 'Twiine Logo',
   },
   links: [
-    { label: 'Features', href: '#features' },
-    { label: 'How it works', href: '#how-it-works' },
-    { label: 'FAQ', href: '#faq' },
-    { label: 'Team', href: '#team' },
+    { label: 'Features', href: 'features' },
+    { label: 'How it works', href: 'how-it-works' },
+    { label: 'FAQ', href: 'faq' },
+    { label: 'Team', href: 'team' },
   ],
   cta: { label: 'Join Waitlist', href: '/waitlist' },
 };

@@ -4,6 +4,7 @@ export const WAITLIST = {
   title: "Join Twiine's Waitlist",
   description: 'Join the waitlist to participate in our beta testing stages!',
   cta: 'Join Waitlist',
+  href: '/waitlist',
   image: { src: WaitlistImage, alt: 'Waitlist Image' },
 };
 

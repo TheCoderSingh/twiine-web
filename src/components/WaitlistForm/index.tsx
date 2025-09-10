@@ -99,9 +99,7 @@ const WaitlistForm = () => {
           </button>
         </form>
 
-        {status === 'error' && (
-          <p className="text-primary mt-4">{WAITLIST_FORM.error.message}</p>
-        )}
+        {status === 'error' && <p className="text-primary mt-4">{WAITLIST_FORM.error.message}</p>}
       </div>
     </div>
   );

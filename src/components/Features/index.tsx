@@ -5,7 +5,7 @@ import * as Icons from 'iconoir-react';
 
 const Features = () => {
   return (
-    <section className="mt-36 mb-14 text-center">
+    <section className="mt-36 mb-14 text-center" id="features">
       <Title icon="LightBulbOn" text="Features" />
       <div className="mt-5">
         <h1 className="text-3xl font-[500] text-tertiary md:text-5xl">{FEATURES.title}</h1>
