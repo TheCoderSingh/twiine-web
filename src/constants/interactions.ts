@@ -13,7 +13,7 @@ export const INTERACTIONS = {
     {
       title: 'Message Your Connections',
       description:
-        'Once you match with someone, swiping pauses, encouraging you to space to build a real, professional relationship before moving on.',
+        'Once you match with someone, swiping pauses, encouraging you to build a real, professional relationship before moving on.',
     },
     {
       title: 'The Networking Toolkit',
